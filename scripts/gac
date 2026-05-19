@@ -1,0 +1,15 @@
+#!/bin/bash
+#This command will do 3 commands of git  : git add , git commit , git push
+#print cmd before excute
+#set -x
+
+if [ -z "$1" ]
+then 
+   echo "Please provide message dude"
+   exit 1
+fi
+
+if git add .  &&  git commit -m "$1"  &&  git push 
+then
+   echo "Succesed"
+fi
