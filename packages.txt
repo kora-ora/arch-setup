@@ -9,8 +9,10 @@ breeze-cursors
 breeze-gtk
 breeze-plymouth
 code
+coolercontrol
 discover
 docker
+docker-desktop
 dolphin
 drkonqi
 efibootmgr
@@ -19,6 +21,7 @@ firefox
 flatpak-kcm
 git
 gst-plugin-pipewire
+gum
 htop
 intel-ucode
 kactivitymanagerd
@@ -52,6 +55,7 @@ libva-nvidia-driver
 linux
 linux-firmware
 linux-lts
+man-db
 milou
 nano
 network-manager-applet
@@ -89,6 +93,7 @@ plymouth-kcm
 polkit-kde-agent
 powerdevil
 print-manager
+python-pip
 qqc2-breeze-style
 sddm-kcm
 smartmontools
