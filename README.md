@@ -41,7 +41,9 @@ nvme0n1     259:0    0 476.9G  0 disk
 **Problem:** My first time install arch ,I try to boot with grub at first then I got kernel panic.
 **Solution:** I change my boot loader to systemd-boot with new install and it's work. 
 
-**Problem:** A week later after install I use sudo pacman -Syu and reboot then my boot option doesn't show arch only window that's avaible
-**Solution:** use usb boot stick.Mount in root go through /boot partition .First I assumed my boot loader config must broke but no .
-After I check I found my entries config is gone . so just build new one
+**Problem:** I used the command sudo pacman -Syu for a regular system update. What happened was after rebooting, the boot option to choose Arch Linux was completely gone.
+**Cause:** Before that, I tried to create a backup kernel by installing linux-lts in /boot, but /boot ran out of space. This led me to make a "rookie mistake" by using the rm command to delete various kernel files.
+**Solution:** Remove linux-lts with pacman -Rs and use mkinitcpio to let the remaining kernel regenerate the necessary files instead.
 
+**Problem:** I tried using the Arduino IDE AppImage, but the serial port didn't show up.
+**Solution:** I added the current user to the uucp group, which grants permission to control serial ports, and then rebooted the system once.
